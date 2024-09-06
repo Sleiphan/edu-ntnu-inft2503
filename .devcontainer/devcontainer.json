@@ -1,0 +1,13 @@
+{
+	"name": "Alpine cpp dev",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+	"onCreateCommand": "chmod +x ./.devcontainer/post-install.sh && ./.devcontainer/post-install.sh",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+			]
+		}
+	}
+}
