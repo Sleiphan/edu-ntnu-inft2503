@@ -1,13 +1,18 @@
 {
 	"name": "Alpine cpp dev",
-  "build": {
-    "dockerfile": "Dockerfile"
-  },
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
 	"onCreateCommand": "chmod +x ./.devcontainer/post-install.sh && ./.devcontainer/post-install.sh",
 	"customizations": {
 		"vscode": {
 			"extensions": [
+				"ms-vscode.cpptools-extension-pack",
+				"ms-azuretools.vscode-docker"
 			]
 		}
+	},
+	"containerEnv": {
+		"CMAKE_GENERATOR": "Ninja" // Or "Unix Makefiles"
 	}
 }
