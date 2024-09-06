@@ -11,8 +11,5 @@
 				"ms-azuretools.vscode-docker"
 			]
 		}
-	},
-	"containerEnv": {
-		"CMAKE_GENERATOR": "Ninja" // Or "Unix Makefiles"
 	}
 }
