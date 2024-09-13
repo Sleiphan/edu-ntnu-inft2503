@@ -11,5 +11,6 @@ int main()
   *q += 4;
   *q = *p + 1;
   p = q;
+
   std::cout << *p << " " << *q << std::endl;
 }

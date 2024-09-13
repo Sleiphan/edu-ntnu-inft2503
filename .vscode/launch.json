@@ -1,6 +1,6 @@
 {
     "version": "0.2.0",
-    "configurations": [ 
+    "configurations": [
         {
             "name": "[windows] Run current file",
             "type": "cppvsdbg",
@@ -20,7 +20,9 @@
             "preLaunchTask": "CMake: Debug: build",
             // Resolved by CMake Tools:
             "program": "${cmake.testProgram}",
-            "args": [ "${cmake.testArgs}"],
+            "args": [
+                "${cmake.testArgs}"
+            ],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
@@ -30,7 +32,7 @@
             "name": "[unix] Run current file",
             "type": "cppdbg",
             "request": "launch",
-            "preLaunchTask": "CMake: Debug: build",
+            // "preLaunchTask": "CMake: Debug: build",
             "program": "${workspaceFolder}/bin/${fileBasenameNoExtension}",
             "args": [],
             "stopAtEntry": false,
@@ -41,10 +43,12 @@
             "name": "[unix] Debug test",
             "type": "cppdbg",
             "request": "launch",
-            "preLaunchTask": "CMake: Debug: build",
+            // "preLaunchTask": "CMake: Debug: build",
             // Resolved by CMake Tools:
             "program": "${cmake.testProgram}",
-            "args": [ "${cmake.testArgs}"],
+            "args": [
+                "${cmake.testArgs}"
+            ],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": []
