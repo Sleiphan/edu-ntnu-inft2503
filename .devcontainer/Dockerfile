@@ -1,5 +1,4 @@
 FROM alpine:latest AS base
 
 RUN apk update
-RUN apk add g++ gdb git cmake github-cli
-RUN apk add samurai
+RUN apk add g++ gdb make cmake git github-cli

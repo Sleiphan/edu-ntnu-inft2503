@@ -32,7 +32,7 @@
             "name": "[unix] Run current file",
             "type": "cppdbg",
             "request": "launch",
-            // "preLaunchTask": "CMake: Debug: build",
+            "preLaunchTask": "CMake: Debug: build",
             "program": "${workspaceFolder}/bin/${fileBasenameNoExtension}",
             "args": [],
             "stopAtEntry": false,
