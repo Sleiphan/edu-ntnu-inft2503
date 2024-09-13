@@ -36,6 +36,20 @@ cp "$SOURCE_DIR/.devcontainer" "$TEMP_DIR/$INTERNAL_DIR/" -r
 cp "$SOURCE_DIR/.vscode" "$TEMP_DIR/$INTERNAL_DIR/" -r
 cp "$SOURCE_DIR/$EXERCISE_DIR" "$TEMP_DIR/$INTERNAL_DIR/" -r
 
+# Process the copied CMakeLists.txt
+CMAKE_FILE="$TEMP_DIR/$INTERNAL_DIR/CMakeLists.txt"
+if [ -f "$CMAKE_FILE" ]; then
+  # Remove lines starting with add_subdirectory(Exercise_
+  awk '!/^add_subdirectory\(Exercise_/' "$CMAKE_FILE" > "$CMAKE_FILE.tmp"
+  # Append the new line
+  echo "add_subdirectory($EXERCISE_DIR)" >> "$CMAKE_FILE.tmp"
+  # Replace the original file with the modified one
+  mv "$CMAKE_FILE.tmp" "$CMAKE_FILE"
+else
+  echo "Error: Copied CMakeLists.txt does not exist."
+  exit 1
+fi
+
 # Create the tarball with files in the desired internal directory
 tar -czvf "$DEST_TARBALL" -C "$TEMP_DIR" "$INTERNAL_DIR"
 
