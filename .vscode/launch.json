@@ -43,7 +43,7 @@
             "name": "[unix] Debug test",
             "type": "cppdbg",
             "request": "launch",
-            // "preLaunchTask": "CMake: Debug: build",
+            "preLaunchTask": "CMake: Debug: build",
             // Resolved by CMake Tools:
             "program": "${cmake.testProgram}",
             "args": [

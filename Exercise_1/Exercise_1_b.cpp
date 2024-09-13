@@ -1,12 +1,12 @@
-#include <string>
-#include <iostream>
 #include <fstream>
+#include <iostream>
+#include <string>
 
 #define TEMP_COUNT 5
 #define TEMP_LOWER_BOUND 10
 #define TEMP_UPPER_BOUND 20
 #define TEMPS_TO_READ 1024
-#define FILE_PATH "temps.txt"
+#define FILE_PATH "Exercise_1/temps.txt"
 
 void read_temperatures(double temperatures[], int length);
 
