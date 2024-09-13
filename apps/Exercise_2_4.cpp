@@ -13,13 +13,13 @@ int main()
   // Følgende er kun en minimalt omformet versjon som gjør at linjene kan kompileres og kjøres.
 
   int a = 5;
-  int b;
+  int b = 0;
   int *c;
   c = &b;
   a = b + *c;
   b = 2;
 
-  printf("a [%p]: %d\n", &a, a);
-  printf("b [%p]: %d\n", &b, b);
-  printf("c [%p]: %p\n", &c, c);
+  printf("a [%p]: %d\n", (void *)&a, a);
+  printf("b [%p]: %d\n", (void *)&b, b);
+  printf("c [%p]: %p\n", (void *)&c, (void *)c);
 }

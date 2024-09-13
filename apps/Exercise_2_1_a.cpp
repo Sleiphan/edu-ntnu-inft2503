@@ -7,8 +7,8 @@ int main()
   int *p = &i;
   int *q = &j;
 
-  printf("i [%p]: %d\n", &i, i);
-  printf("j [%p]: %d\n", &j, j);
-  printf("p [%p]: %p\n", &p, p);
-  printf("q [%p]: %p\n", &q, q);
+  printf("i [%p]: %d\n", (void *)&i, i);
+  printf("j [%p]: %d\n", (void *)&j, j);
+  printf("p [%p]: %p\n", (void *)&p, (void *)p);
+  printf("q [%p]: %p\n", (void *)&q, (void *)q);
 }
