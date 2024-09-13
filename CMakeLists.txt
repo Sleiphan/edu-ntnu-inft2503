@@ -9,7 +9,13 @@ project(edu_ntnu_inft2503
     DESCRIPTION "An example project."
     LANGUAGES C CXX)
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++1y -pedantic -Wall -Wextra")
+if(CMAKE_SYSTEM_NAME STREQUAL "Windows")
+    message(STATUS "Setting compiler flags for Windows")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")
+elseif(CMAKE_SYSTEM_NAME STREQUAL "Linux")
+    message(STATUS "Setting compiler flags for Linux")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++1y -pedantic -Wall -Wextra")
+endif()
 
 set(CMAKE_PDB_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/pdb)
 

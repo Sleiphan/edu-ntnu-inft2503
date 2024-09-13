@@ -1,5 +1,5 @@
-#include <string>
 #include <iostream>
+#include <string>
 
 #define TEMP_COUNT 5
 #define TEMP_LOWER_BOUND 10
@@ -9,15 +9,13 @@ int main()
 {
   std::cout << "Du skal skrive inn " << TEMP_COUNT << " temperaturer." << std::endl;
 
-  int temp_input_idx = 1;
-
   int count_lo = 0;
   int count_mi = 0;
   int count_hi = 0;
 
-  while (temp_input_idx <= TEMP_COUNT)
+  for (int temp_input_idx = 0; temp_input_idx < TEMP_COUNT; ++temp_input_idx)
   {
-    printf("Temperatur nr %d: ", temp_input_idx);
+    printf("Temperatur nr %d: ", temp_input_idx + 1);
     std::string user_input;
     std::cin >> user_input;
 
@@ -41,7 +39,6 @@ int main()
     count_lo += temp < TEMP_LOWER_BOUND;
     count_mi += temp >= TEMP_LOWER_BOUND && temp <= TEMP_UPPER_BOUND;
     count_hi += temp > TEMP_UPPER_BOUND;
-    ++temp_input_idx;
   }
 
   printf("Antall under %d er %d\nAntall mellom %d og %d er %d\nAntall over %d er %d\n",
