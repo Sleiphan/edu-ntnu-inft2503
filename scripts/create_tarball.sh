@@ -51,7 +51,7 @@ else
 fi
 
 # Create the tarball with files in the desired internal directory
-tar -czvf "$DEST_TARBALL" -C "$TEMP_DIR" "$INTERNAL_DIR"
+tar -czf "$DEST_TARBALL" -C "$TEMP_DIR" "$INTERNAL_DIR"
 
 # Clean up the temporary directory
 rm -rf "$TEMP_DIR"
