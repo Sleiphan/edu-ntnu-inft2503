@@ -21,4 +21,5 @@ set(CMAKE_PDB_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/pdb)
 
 add_subdirectory(Exercise_1)
 add_subdirectory(Exercise_2)
+add_subdirectory(Exercise_3)
 

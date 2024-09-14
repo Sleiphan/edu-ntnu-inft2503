@@ -74,6 +74,12 @@
     "xtr1common": "cpp",
     "xtree": "cpp",
     "xutility": "cpp",
-    "numeric": "cpp"
+    "numeric": "cpp",
+    "*.tcc": "cpp",
+    "cwctype": "cpp",
+    "memory_resource": "cpp",
+    "random": "cpp",
+    "string_view": "cpp",
+    "numbers": "cpp"
   }
 }
