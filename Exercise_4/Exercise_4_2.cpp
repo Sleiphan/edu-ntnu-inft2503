@@ -12,9 +12,9 @@ public:
   {
     button.set_label("Click here");
 
-    box.pack_start(entry);  // Add the widget entry  to box
+    box.pack_start(entry);  // Add the widget entry to box
     box.pack_start(button); // Add the widget button to box
-    box.pack_start(label);  // Add the widget label  to box
+    box.pack_start(label);  // Add the widget label to box
 
     add(box);   // Add vbox to window
     show_all(); // Show all widgets
