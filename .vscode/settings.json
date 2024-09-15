@@ -80,6 +80,10 @@
     "memory_resource": "cpp",
     "random": "cpp",
     "string_view": "cpp",
-    "numbers": "cpp"
+    "numbers": "cpp",
+    "cstdarg": "cpp",
+    "semaphore": "cpp",
+    "cinttypes": "cpp",
+    "valarray": "cpp"
   }
 }
