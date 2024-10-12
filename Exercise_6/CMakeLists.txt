@@ -11,7 +11,7 @@ set_target_properties(${EXECUTABLE}
 )
 
 set(EXECUTABLE "Exercise_6_2")
-add_executable(${EXECUTABLE} Exercise_6_2.cpp chessboard.cpp)
+add_executable(${EXECUTABLE} Exercise_6_2.cpp http_message.cpp)
 target_include_directories(${EXECUTABLE} PUBLIC .)
 target_link_libraries(${EXECUTABLE} Boost::filesystem Boost::system)
 set_target_properties(${EXECUTABLE}

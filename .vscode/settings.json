@@ -84,6 +84,15 @@
     "cstdarg": "cpp",
     "semaphore": "cpp",
     "cinttypes": "cpp",
-    "valarray": "cpp"
+    "valarray": "cpp",
+    "span": "cpp",
+    "csignal": "cpp",
+    "codecvt": "cpp",
+    "complex": "cpp",
+    "coroutine": "cpp",
+    "source_location": "cpp",
+    "future": "cpp",
+    "shared_mutex": "cpp",
+    "typeindex": "cpp"
   }
 }
