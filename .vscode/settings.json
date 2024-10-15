@@ -93,6 +93,7 @@
     "source_location": "cpp",
     "future": "cpp",
     "shared_mutex": "cpp",
-    "typeindex": "cpp"
+    "typeindex": "cpp",
+    "*.ipp": "cpp"
   }
 }
