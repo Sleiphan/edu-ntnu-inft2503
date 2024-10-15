@@ -25,4 +25,5 @@ add_subdirectory(Exercise_3)
 add_subdirectory(Exercise_4)
 add_subdirectory(Exercise_5)
 add_subdirectory(Exercise_6)
+add_subdirectory(Exercise_7)
 
